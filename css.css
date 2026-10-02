@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: lightgreen;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.choice {
+    height: 200px;
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: lightblue;
+    transform: translateY(-4px);
+}
+
+.choice:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 4px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.score {
+    min-width: 120px;
+}
+
+#user-score,
+#computer-score {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.message-box {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#msg {
+    background-color: lightsteelblue;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    border-radius: 12px;
+    color: #1f2937;
+}
